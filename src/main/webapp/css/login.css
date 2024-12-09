@@ -1,0 +1,77 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 14 nov 2024, 00:02:26
+    Author     : l_car
+*/
+
+body {
+    
+           background-image: url("ger.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+  font-family: "Caesar Dressing";    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+.login-container {
+    background-color: #DB882A; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"],
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #DB882A; 
+    color: white;
+    border: 14px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+      border:3px solid #0d1b2a;
+    border-radius: 55px;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+.forgot-password a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}

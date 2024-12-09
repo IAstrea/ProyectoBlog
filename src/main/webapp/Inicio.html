@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones</title>
+    <link rel="stylesheet" href="css/estiloInicio.css">
+ 
+</head>
+<body> 
+    <header> 
+        <h1>Publicaciones del Blog</h1> 
+    </header>
+    <section id="posts"> 
+        <h2>Publicaciones Recientes</h2> 
+        <!-- Aquí se añadirán las nuevas publicaciones --> 
+    </section>
+    <button class="add-post-btn" onclick="openForm()">Añadir Publicación</button>
+    <div class="form-popup" id="myForm">
+        <form id="newPostForm" class="form-container">
+            <h2>Añadir Nueva Publicación</h2>
+            <label for="postTitle">Título:</label>
+            <input type="text" id="postTitle" name="postTitle" required>
+            <label for="postContent">Contenido:</label> 
+            <textarea id="postContent" name="postContent" required></textarea>
+            <label for="postAuthor">Autor:</label> 
+            <input type="text" id="postAuthor" name="postAuthor" required> 
+            <button type="submit">Añadir Publicación</button> 
+            <button type="button" class="cancel" onclick="closeForm()">Cerrar</button>
+        </form> 
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+</html>
